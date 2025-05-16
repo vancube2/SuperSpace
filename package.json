@@ -1,0 +1,36 @@
+{
+  "name": "superspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd superspace-backend && node index.js",
+    "frontend": "cd superspace-frontend && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vancube2/Super-Space.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vancube2/Super-Space/issues"
+  },
+  "homepage": "https://github.com/vancube2/Super-Space#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "process": "^0.11.10",
+    "readable-stream": "^4.7.0",
+    "winston": "^3.17.0"
+  }
+}
